@@ -3,6 +3,8 @@ body, main {
 }
 body {
     flex-direction: column;
+    background-color: rgb(28, 28, 68);
+    color: white
 }
 main {
     flex: auto
@@ -15,4 +17,10 @@ aside {
 }
 article, aside {
     overflow-y: auto;
+}
+a {
+    color: inherit;
+}
+footer a, header a {
+    color: inherit
 }
