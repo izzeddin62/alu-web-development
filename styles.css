@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.section {
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+.banner {
+    background-image: url(/assets/img/banner.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header__nav {
+    display: flex;
+    gap: 54px
+}
+.header__nav a {
+    display: block;
+    color: white;
+    align-items: baseline;
+    text-decoration: none;
+    t
+}
