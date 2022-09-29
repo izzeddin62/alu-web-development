@@ -11,6 +11,70 @@
     margin-left: auto;
 }
 
+
+/* button */
+.button {
+    background-color: #C271FF;
+    padding: 12px 20px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: none;
+    display: inline-block;
+}
+
+/* title */
+
+.title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #071629;
+}
+.title--lg {
+    font-size: 120px;
+    line-height: 150px;
+}
+
+.title--sm {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.title--xs {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.title--light {
+    color: white;
+}
+.title__emp {
+    color: #C271FF;
+}
+
+
+/* text */
+.text {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+.text--italic {
+    font-style: italic;
+}
+.text--light {
+    color: white;
+}
+.text--sm {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+
+
+
 .header {
     position: relative;
     z-index: 2;
@@ -18,13 +82,7 @@
     justify-content: space-between;
     margin-top: 36px;
 }
-.banner {
-    background-image: url(/assets/img/banner.png);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
+
 .header__nav {
     display: flex;
     gap: 54px
@@ -34,5 +92,52 @@
     color: white;
     align-items: baseline;
     text-decoration: none;
-    t
+}
+/* banner */
+.banner {
+    background-image: url(/assets/img/banner.png);
+    position: relative;
+    top: -70px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 220px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 56px;
+}
+.banner__sub-header {
+    text-align: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 38px;
+    
+}
+.banner__pro {
+    margin-top: 88px;
+    padding-top: 80px;
+}
+.banner__pro-list {
+    display: flex;
+    gap: 120px;
+    margin-top: 56px;
+}
+.banner__pro-item {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    max-width: 150px;
+}
+.banner__pro-img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.banner__pro-title {
+    margin-bottom: 2px;
 }
