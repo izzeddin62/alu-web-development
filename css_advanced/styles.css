@@ -213,3 +213,15 @@
     padding-right: 14px;
     padding-left: 13px;
 }
+
+.videos__item-img-wrapper {
+    position: relative;
+}
+.play {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
