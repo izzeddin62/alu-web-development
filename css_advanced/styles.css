@@ -74,6 +74,7 @@
 
 
 
+/* header */
 
 .header {
     position: relative;
@@ -94,6 +95,7 @@
     text-decoration: none;
 }
 /* banner */
+
 .banner {
     background-image: url(/assets/img/banner.png);
     position: relative;
@@ -140,4 +142,21 @@
 }
 .banner__pro-title {
     margin-bottom: 2px;
+}
+
+/* quotes */
+.quote {
+    background-color: #C271FF;
+    position: relative;
+    top: -70px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    align-items: center;
+}
+.quote__text {
+    max-width: 730px;
+    margin-bottom: 22px;
 }
