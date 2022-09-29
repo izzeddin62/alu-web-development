@@ -41,6 +41,10 @@
     font-size: 22px;
     line-height: 32px;
 }
+.title--md {
+    font-size: 32px;
+    line-height: 40px;
+}
 
 .title--xs {
     font-size: 16px;
@@ -72,7 +76,12 @@
     line-height: 22px;
 }
 
-
+.text--gray {
+    color: #071629;
+}
+.text--pink {
+    color: #C271FF;
+}
 
 /* header */
 
@@ -155,8 +164,52 @@
     justify-content: center;
     gap: 56px;
     align-items: center;
+    margin-bottom: 16px;
 }
 .quote__text {
     max-width: 730px;
     margin-bottom: 22px;
+}
+
+.videos {
+    margin-bottom: 86px;
+}
+.videos__title {
+    text-align: center;
+}
+.videos__list {
+    display: flex;
+    gap: 30px;
+    margin-top: 75px;
+}
+.videos__item {
+    flex: 1;
+}
+.videos__item-title {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    padding-right: 14px;
+    padding-left: 13px;
+}
+.videos__item-text {
+    margin-bottom: 14px;
+    padding-right: 14px;
+    padding-left: 13px;
+}
+.videos__item-author-img {
+    width: 30px;
+    height: 30px;
+}
+.videos__item-author {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 14px;
+    padding-right: 14px;
+    padding-left: 13px;
+}
+.videos__item-stars {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 14px;
+    padding-left: 13px;
 }
