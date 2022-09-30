@@ -112,7 +112,7 @@
 /* banner */
 
 .banner {
-    background-image: url(/assets/img/banner.png);
+    background-image: url(./assets/img/banner.png);
     position: relative;
     top: -70px;
     left: 0;
