@@ -225,3 +225,42 @@
     bottom: 0;
     margin: auto
 }
+
+
+/* membership */
+
+.member {
+    background: #071629;
+    padding-top: 70px;
+    padding-bottom: 52px;
+}
+
+.member__title {
+    text-align: center;
+}
+.member__list {
+    display: flex;
+    justify-content: space-between;
+}
+.member__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.member__text {
+    max-width: 212px;
+    margin-top: 12px;
+} 
+.member__item-title {
+    margin-top: 24px;
+}
+.member__list {
+    margin-top: 56px;
+    margin-bottom: 85px;
+}
+.member__register {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+} 
