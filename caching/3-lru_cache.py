@@ -11,8 +11,8 @@ class LRUCache(BaseCaching):
         """Add an item in the cache"""
         if key is None or item is None:
             return
-        if (key not in self.cache_data and 
-            len(self.cache_data) >= BaseCaching.MAX_ITEMS):
+        if (key not in self.cache_data and
+                len(self.cache_data) >= BaseCaching.MAX_ITEMS):
             if self.cache_data:
                 discard = next(iter(self.cache_data))
                 print("DISCARD: {}".format(discard))
