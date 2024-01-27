@@ -127,6 +127,7 @@ class Base():
         """
         print('====== testing search =====', cls.__name__, attributes)
         s_class = cls.__name__
+        print('====== testing ===== VALUES', DATA[s_class].values())
         def _search(obj):
             print(obj, '====== testing ===== search')
             if len(attributes) == 0:
