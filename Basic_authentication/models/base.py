@@ -134,6 +134,4 @@ class Base():
                     return False
             return True
         res = list(filter(_search, DATA[s_class].values()))
-        print(res, '====== testing =====')
-        
         return res
