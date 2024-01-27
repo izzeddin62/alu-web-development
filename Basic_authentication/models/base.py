@@ -133,5 +133,7 @@ class Base():
                 if (getattr(obj, k) != v):
                     return False
             return True
+        res = list(filter(_search, DATA[s_class].values()))
+        print(res, '====== testing =====')
         
-        return list(filter(_search, DATA[s_class].values()))
+        return res
