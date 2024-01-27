@@ -64,10 +64,9 @@ class BasicAuth(Auth):
             return None
         if user_pwd is None or type(user_pwd) is not str:
             return None
-        try:
-            users = User.search({'email': user_email})
-        except Exception:
-            print("I had an exception")
+
+        users = User.search({'email': user_email})
+
         if not users:
             return None
         if users is None or len(users) == 0:
@@ -76,3 +75,23 @@ class BasicAuth(Auth):
             if user.is_valid_password(user_pwd):
                 return user
         return None
+    
+    def current_user(self, request=None) -> TypeVar('User'):
+        """current user"""
+        header = self.authorization_header(request)
+        if header is None:
+            return None
+        b64 = self.extract_base64_authorization_header(header)
+        if b64 is None:
+            return None
+        decoded = self.decode_base64_authorization_header(
+            b64)
+        if decoded is None:
+            return None
+        user_info = self.extract_user_credentials(
+            decoded)
+        if user_info is None:
+            return None
+        email, pwd = user_info
+        user = self.user_object_from_credentials(email, pwd)
+        return user
