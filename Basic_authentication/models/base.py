@@ -125,6 +125,7 @@ class Base():
     def search(cls, attributes: dict = {}) -> List[TypeVar('Base')]:
         """ Search all objects with matching attributes
         """
+        print('====== testing search =====', cls.__name__, attributes)
         s_class = cls.__name__
         def _search(obj):
             print(obj, '====== testing ===== search')
