@@ -64,8 +64,10 @@ class BasicAuth(Auth):
             return None
         if user_pwd is None or type(user_pwd) is not str:
             return None
-        users = User.search({'email': user_email})
-        print(len(users))
+        try:
+            users = User.search({'email': user_email})
+        except Exception:
+            print("I had an exception")
         if not users:
             return None
         if users is None or len(users) == 0:
