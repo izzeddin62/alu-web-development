@@ -33,7 +33,8 @@ def login():
     if auth.valid_login(email, password):
         session_id = auth.create_session(email)
         if session_id:
-            response = make_response(jsonify({"email": email, "session_id": session_id}))
+            response = make_response(
+                    jsonify({"email": email, "session_id": session_id}))
             response.set_cookie('session_id', session_id)
             return response
     abort(401)
